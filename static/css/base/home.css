@@ -1,3 +1,8 @@
 .unreal_title {
-    margin 0 50%;
+    text-align: center;
+    font-size: 10em;
+}
+
+.glitchyload {
+    width: 200px;
 }
