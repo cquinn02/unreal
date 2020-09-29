@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base/base.css')}}">
+
+    {{ JSGlue.include() }}
+
+    <!-- Checks if title is passed as variable, if it is then it is appended to unreal title, otherwise it's just unreal -->
+    {% if title %}
+    <title>unreal - {{ title }}</title></title>
+    {% else %}
+    <title>unreal</title>
+    {% endif %}
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+    <script>
+        {% block script %}
+        {% endblock %}
+    </script>
+</body>
+</html>
