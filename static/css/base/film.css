@@ -46,6 +46,7 @@
 }
 
 .synopsis {
+    color: red;
     width: 50%;
     font-family: Roboto Mono;
     font-size: 1.5em;
