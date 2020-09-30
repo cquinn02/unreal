@@ -1,0 +1,71 @@
+.tagline {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 0;
+}
+
+.tagline h2 {
+    font-family: Karla;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    width: 730px;
+    animation: 
+      typing 3.5s steps(40, end),
+      cursor_blink .75s step-end infinite;
+  }
+
+.view_text {
+    color: red;
+    font-family: Consolas;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.view_button {
+    color: #6dde39;
+    font-family: Consolas;
+    text-align: center;
+}
+
+.view_button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mainimage_synopsis {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainimage, .synopsis {
+    margin: 1.5em 3em 0;
+}
+
+.synopsis {
+    width: 50%;
+    font-family: Roboto Mono;
+    font-size: 1.5em;
+}
+
+.mainimage {
+    flex-grow: 1;
+    max-height: 600px;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 730px }
+}
+
+@keyframes cursor_blink {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
