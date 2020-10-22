@@ -7,13 +7,16 @@
     <div class="tagline" id="tagline">
         <h2>"Some things were never meant to be discovered"</h2>   
     </div>
-    <h3 class="view_text hide" id="view_button">DOCUMENT NO.1E4WGH6LO9 RECOVERED SUCCESSFULLY</h3>
-    <h3 style="font-family: Consolas; text-align: center;">------------</h3>
-    <h3 class="view_button hide" id="view_text" onclick="on_view_button_click()">VIEW</h3>
-    <div class="mainimage_synopsis hide" id="mainimage_synopsis">
-        <img class="mainimage" src="{{url_for('static', filename='img/sample.png')}}" alt="sample image">
-        <p class="synopsis">Synopsis:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+        <h3 class="view_text hide" id="view_button">DOCUMENT NO.1E4WGH6LO9 RECOVERED SUCCESSFULLY</h3>
+        <h3 style="font-family: Consolas; text-align: center;">------------</h3>
+        <h3 class="view_button hide" id="view_text" onclick="on_view_button_click()">VIEW</h3>
+        <div class="container">
+            <img class="main_image hide" id="main_image" src="{{ url_for('static', filename='img/housewithsign.jpg') }}">
+            <div class="text_container hide" id="text_container">
+                <p class="synopsis" id="synopsis">On the 27th of February 2004 a child went missing with no trace as to what occurred. Some believed it was simply a kidnapping or an unfortunate incident, but when more of these disappearances occur, it suggests it could be due to a more sinister cause. Watch as the secrets about the true nature of our reality unravels.</p>
+                <p class="watch"><b>Watch <span style="color: #fff;"><u>Unreal</u></span> in cinemas<br>on 16/11/2002</b></p>
+            </div>
+        </div>
     <script>
         film_init();
     </script>

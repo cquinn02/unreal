@@ -8,8 +8,10 @@ function film_init() {
 function on_view_button_click() {
     var view_text = document.getElementById("view_text");
     var view_button = document.getElementById("view_button");
-    var mainimage_synopsis = document.getElementById("mainimage_synopsis");
+    var text_container = document.getElementById("text_container");
+    var main_image = document.getElementById("main_image");
     view_text.classList.toggle("hide");
     view_button.classList.toggle("hide");
-    mainimage_synopsis.classList.toggle("hide")
+    text_container.classList.toggle("hide");
+    main_image.classList.toggle("hide");
 }
