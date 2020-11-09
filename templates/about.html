@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base/about.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="main-container">
+        <div class="sub-container">
+            <h2 style="color: red;">
+                The year is 2005, 1 year after the incident...
+            </h2>
+            <p>
+                On the 27th of February of 2004 an unexplainable event occurs, the disappearance of 
+                a little boy with no evidence as to his whereabout or what occured to him. At first it
+                is dismissed as a simple missing persons case but eventually more of such events start
+                occuring. Forced to confront the reality of our world, secrets <b><u>never</u></b> dreamt of will be
+                revealed.
+            </p>
+            <img class="black-hole" src="{{ url_for('static', filename='img/black hole.png') }}">
+        </div>
+
+        <div class="sub-container">
+            <div class="characters-container">
+                <h2 style="color: limegreen; text-decoration: underline;">
+                    Characters:
+                </h2>
+                <div class="characters">
+                    <div>
+                        <h3>
+                            Kane
+                        </h3>
+                        <img class="michael" src="{{ url_for('static', filename='img/michael.png') }}">
+                    </div>
+
+                    <div>
+                        <h3>
+                            Lloyd
+                        </h3>
+                        <img class="james" src="{{ url_for('static', filename='img/james.png') }}">
+                    </div>
+
+                    <div>
+                        <h3>
+                            Andrew
+                        </h3>
+                        <img class="conor" src="{{ url_for('static', filename='img/conor.png') }}">
+                    </div>
+      
+                </div>
+            </div>     
+            <p>
+                1 year after the incident investigation went cold, three government operatives reopen 
+                the investigation into the mystery disappearances but the truth is often ugly to bear.
+                Some secrets were never meant to be discovered.
+            </p>
+            <p>
+                Watch Unreal in cinemas to see the invesigation take place.
+            </p>
+            
+        </div>
+
+        <div class="sub-container">
+            <h3 style="color: cyan; text-decoration: underline;">
+                Victor Scott on his experiences on set:
+            </h3>
+            <audio controls>
+                <source src="{{ url_for('static', filename='sfx/interview.mp3') }}">
+                <span style="color: red;">
+                    Your browser does not support playback of audio
+                </span>
+            </audio>
+        </div>
+    </div>
+
+{% endblock %}

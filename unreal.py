@@ -15,7 +15,7 @@ def film():
 
 @app.route("/about")
 def more():
-    return render_template("more.html")
+    return render_template("about.html")
 
 
 if __name__ == "__main__":
